@@ -48,14 +48,12 @@ void Device::run()
 
 	if (mNumReaders == 0)
 	{
-
 		SkyeTek_FreeReaders(mReaders, mNumReaders);
 		SkyeTek_FreeDevices(mDevices, mNumDevices);
 		emit FatalError();
 		this->isReading = false;
 		exit();
 	}
-
 	
 	while (isReading)
 	{
@@ -79,7 +77,7 @@ QString Device::toQString(TCHAR const * str)
 {
 	QString tmp = QString("");
 
-	for (int i = 0; str[i] != '\0'; i++)
+	for (unsigned int i = 0; str[i] != '\0'; i++)
 	{
 		tmp.append((LPSTR)(str + i));
 	}
