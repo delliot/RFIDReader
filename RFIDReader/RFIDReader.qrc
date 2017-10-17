@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="RFIDReader">
+    </qresource>
+</RCC>
