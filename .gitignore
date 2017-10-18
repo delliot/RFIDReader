@@ -1,4 +1,6 @@
 GeneratedFiles/
 Debug/
-Win32/
 .vs/
+Debug/RFIDReader.exe
+Debug/RFIDReader.pdb
+Debug/RFIDReader.ilk
