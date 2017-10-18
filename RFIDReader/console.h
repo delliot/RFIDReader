@@ -14,8 +14,7 @@ signals:
 public:
     explicit Console(QWidget *parent = 0);
 	virtual ~Console();
-    void putData(const QByteArray &data);
-	void putString(const QString &str);
+	void putTag(const QString &str);
 private:
 	QSet<QString>* setOfTags;
 	void PrintAllTags();
